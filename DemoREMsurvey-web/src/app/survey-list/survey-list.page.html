@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>รายการแบบสอบถาม</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card class="ion-padding">
+        <ion-row>
+          <ion-col text-center>
+            <h1>รายการแบบสอบถาม</h1>
+          </ion-col>
+        </ion-row>
+    
+        <ion-grid >
+    
+          <ion-row>
+            <ion-segment scrollable>
+              <table class="fixed_header">
+                <thead>
+                  <tr>
+                    <th>ลำดับ</th>
+                    <th>ชื่อ - สกุล</th>
+                    <th>อายุ</th>
+                    <th>เบอร์โทร</th>
+                    <th width="5%">ดูข้อมูล</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>นายเขียว</td>
+                    <td>32</td>
+                    <td>0123456789</td>
+                    <td>
+                      <ion-button color="secondary" (click)="gotoSurveyDetail()">ดูข้อมูล</ion-button>
+                    </td>
+                   </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>นายดำ</td>
+                    <td>30</td>
+                    <td>0123456789</td>
+                     <td>
+                      <ion-button color="secondary" (click)="gotoSurveyDetail()">ดูข้อมูล</ion-button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>นายขาว</td>
+                    <td>25</td>
+                    <td>0123456789</td>
+                     <td>
+                      <ion-button color="secondary" (click)="gotoTableBill()">ดูข้อมูล</ion-button>
+                    </td>
+                   </tr>
+                </tbody>
+              </table>
+            </ion-segment>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+
+</ion-content>
